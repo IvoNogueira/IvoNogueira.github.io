@@ -100,8 +100,8 @@ author:
   email            :
   links:
     - label: "Email"
-      icon: "IvoACNogueira@gmail.com"
-      # url: mailto:your.name@email.com
+      icon: "fas fa-fw fa-envelope-square"
+       url: mailto:IvoACNogueira@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -112,8 +112,8 @@ author:
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
-      icon: "IvoNogueira-github"
-      # url: "https://github.com/"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/IvoNogueira"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -279,12 +279,11 @@ defaults:
       comments: # true
       share: true
       related: true
+
   # _pages
   - scope:
       path: ""
       type: pages
-  values:
-    layout: single
-    author_profile: true
-    
-
+    values:
+      layout: single
+      author_profile: true
