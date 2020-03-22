@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Ivo Nogueira"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/bio-photo.png" # path of avatar image, e.g.
   bio              : "I am a Data Analyst at Farfetch."
   location         : "Porto - Portugal"
   email            :
