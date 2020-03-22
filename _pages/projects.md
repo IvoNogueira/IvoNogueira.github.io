@@ -15,10 +15,6 @@ header:
     </a>
   </h2>
   <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-  {
-    <p>
-    { post.excerpt }
-    </p>
-  }
+  <p>{{ post.excerpt }}</p>
 </article>
 {% endfor %}
