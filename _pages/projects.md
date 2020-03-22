@@ -7,7 +7,7 @@ header:
   image: "/images/header_main.jpg"
 ---
 
-<ul>
+
 {
     "posts": [
         {% for post in site.posts %}
@@ -19,4 +19,3 @@ header:
         {% endfor %}
     ]
 }
-</ul>
