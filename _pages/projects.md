@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: null
 permalink: /projects/
 title: "Sample Projects by Level of Complexity"
 author_profile: true
@@ -7,9 +7,6 @@ header:
   image: "/images/header_main.jpg"
 ---
 
----
-layout: null
----
 {
     "posts": [
         {% for post in site.posts %}
