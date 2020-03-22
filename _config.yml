@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Ivo Nogueira"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Data Scientist at Farfetch."
+  bio              : "I am a Data Analyst at Farfetch."
   location         : "Porto - Portugal"
   email            :
   links:
@@ -114,9 +114,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/IvoNogueira"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-LinkedIn"
+      url: "https://www.linkedin.com/in/ivo-nogueira/"
 
 # Site Footer
 footer:
