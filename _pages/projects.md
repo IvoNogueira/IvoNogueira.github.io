@@ -8,14 +8,11 @@ header:
 ---
 
 
+
+{% for post in site.posts %}
 {
-    "posts": [
-        {% for post in site.posts %}
-        {
-            "title": "{{ post.title | xml_escape }}",
-            "url": "{{ site.url }}{{ post.url }}",
-            "date": "{{ post.date | date_to_xmlschema }}"
-        }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    ]
-}
+    "title": "{{ post.title | xml_escape }}",
+    "url": "{{ site.url }}{{ post.url }}",
+    "date": "{{ post.date | date_to_xmlschema }}"
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
