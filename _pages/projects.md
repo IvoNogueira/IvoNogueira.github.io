@@ -7,13 +7,17 @@ header:
   image: "/images/header_main.jpg"
 ---
 
-{% include absolute_url %}
-{% include group-by-array collection=site.posts field="tags" %}
-
-{% for tag in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endfor %}
+---
+layout: null
+---
+{
+    "posts": [
+        {% for post in site.posts %}
+        {
+            "title": "{{ post.title | xml_escape }}",
+            "url": "{{ site.url }}{{ post.url }}",
+            "date": "{{ post.date | date_to_xmlschema }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
