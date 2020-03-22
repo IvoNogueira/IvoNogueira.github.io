@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/images/header-main.jpg"
+  image: "/images/header_main.jpg"
 ---
 
 My name is Ivo Nogueira and I'm a Data Analyst at Farfetch.
