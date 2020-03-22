@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: archive
 permalink: /projects/
 title: "Sample Projects by Level of Complexity"
 author_profile: true
@@ -7,14 +7,14 @@ header:
   image: "/images/header_main.jpg"
 ---
 
-{
-    "posts": [
-        {% for post in site.posts %}
-        {
-            "title": "{{ post.title | xml_escape }}",
-            "url": "{{ site.url }}{{ post.url }}",
-            "date": "{{ post.date | date_to_xmlschema }}"
-        }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    ]
-}
+{% for post in site.posts %}
+<article>
+  <h2>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
+  <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+  {{ post.content }}
+</article>
+{% endfor %}
