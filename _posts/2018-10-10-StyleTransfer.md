@@ -13112,7 +13112,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="The-Challenge">The Challenge<a class="anchor-link" href="#The-Challenge">&#182;</a></h2><p>I love art. Unfortunately, I am not the best at expressing my art. Here's me having a go at drawing my dog:</p>
-<p><img src="images/pipoca/poca_drawing.png"></p>
+<p><img src="/images/pipoca/poca_drawing.png"></p>
 <p>While there is some merit in this attempt (notice the waggling tail and the shadow details), when i picture a drawing of my dog I imagine a Picasso. In this notebook I'm going to do just that, by using neural style transfer to learn Picasso's style and use it on a photo of my dog, which is going to serve as our content image. My objective is to end up with a picture that mimics the style of Pablo Picasso, while keeping the end result as close as possible to the original.</p>
 <p>This challenge is inspired by the exercise in Style Transfer from the Week 4 of the course Convolutional Neural Networks by Deeplearning.ai on Coursera.</p>
 <p>More concretely, I am going to use a content image (C - photo of poca), and a style image (S - a painting of Picasso) to output a generated image (G) that looks like the original image C but with the style of S.
@@ -13664,7 +13664,7 @@ Let's get started.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The last step is to run <code>model_nn(sess, generated_image)</code>
 After running the code above we finally have our converted photo which looks like this:
-<img src="images/pipoca/picasso_pipoca.png"></p>
+<img src="/images/pipoca/picasso_pipoca.png"></p>
 <p>We could go back and possibly choose a different layer but, in this case, I'm quite happy with the results.</p>
 
 </div>

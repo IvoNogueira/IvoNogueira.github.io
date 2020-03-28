@@ -13186,7 +13186,7 @@ div#notebook {
 </li>
 <li>Return the learned parameters </li>
 </ul>
-<p><img src="BabyNameGenerator/images/rnn.png" style="width:450;height:300px;"></p>
+<p><img src="/images/BabyNameGenerator/rnn.png" style="width:450;height:300px;"></p>
 <caption><center> **Figure 1**: Recurrent Neural Network, similar to what you had built in the previous notebook "Building a RNN - Step by Step".  </center></caption><p>At each time-step, the RNN tries to predict what is the next character given the previous characters. The dataset $X = (x^{\langle 1 \rangle}, x^{\langle 2 \rangle}, ..., x^{\langle T_x \rangle})$ is a list of characters in the training set, while $Y = (y^{\langle 1 \rangle}, y^{\langle 2 \rangle}, ..., y^{\langle T_x \rangle})$ is such that at every time-step $t$, we have $y^{\langle t \rangle} = x^{\langle t+1 \rangle}$.</p>
 
 </div>
@@ -13203,7 +13203,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="2.1---Clipping-the-gradients-in-the-optimization-loop">2.1 - Clipping the gradients in the optimization loop<a class="anchor-link" href="#2.1---Clipping-the-gradients-in-the-optimization-loop">&#182;</a></h3><p>In the function below, we implement a function <code>clip</code> that takes in a dictionary of gradients and returns a clipped version of gradients if needed. There are different ways to clip gradients; we will use a simple element-wise clipping procedure, in which every element of the gradient vector is clipped to lie between some range [-N, N].
-<img src="BabyNameGenerator/images/clip.png" style="width:400;height:150px;"></p>
+<img src="/images/BabyNameGenerator/clip.png" style="width:400;height:150px;"></p>
 <caption><center> **Figure 2**: Visualization of gradient descent with and without gradient clipping, in a case where the network is running into slight "exploding gradient" problems. </center></caption>
 </div>
 </div>
@@ -13244,7 +13244,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="2.2---Sampling">2.2 - Sampling<a class="anchor-link" href="#2.2---Sampling">&#182;</a></h3><p>After having a trained model we need a way to generate new text (characters). The process of generation is explained in the picture below:</p>
-<p><img src="BabyNameGenerator/images/dinos3.png" style="width:500;height:300px;"></p>
+<p><img src="/images/BabyNameGenerator/dinos3.png" style="width:500;height:300px;"></p>
 <caption><center> **Figure 3**: In this picture, we assume the model is already trained. We pass in $x^{\langle 1\rangle} = \vec{0}$ at the first time step, and have the network then sample one character at a time. </center></caption><p>We are going to create the <code>sample</code> function in 4 steps:</p>
 <ul>
 <li><p><strong>Step 1</strong>: Pass the network the first "dummy" input $x^{\langle 1 \rangle} = \vec{0}$ (the vector of zeros). This is the default input before we've generated any characters. We also set $a^{\langle 0 \rangle} = \vec{0}$</p>
