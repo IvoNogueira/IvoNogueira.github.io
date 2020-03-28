@@ -3,7 +3,7 @@ title: "Style Transfer"
 date: 2018-10-10
 tags: [data science, style transfer, computer vision]
 header:
-  image: "/images/perceptron/header_perceptron.jpeg"
+  image: "/images/perceptron/perceptron_small.jpeg"
 excerpt: "Data Science, Style Transfer, Computer Vision"
 ---
 
