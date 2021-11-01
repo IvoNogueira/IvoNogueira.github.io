@@ -123,7 +123,7 @@ Meaning that for frame 300 person 1 was on the frame and was on the position (19
 
 The video we shot was taken from a fixed angle. However, the value of a pixel movement is different for each frame on the video. When further away from the camera, a pixel movement might mean a lot but when closer to the camera 1 pixel is very little. We will use the mapping detailed in the section above, to get out position relative to the ground we are running over, of which we know the dimensions. 
 
-![running_graph](data/img/running_graph.png)
+![running_graph](../images/TrackMyRun/running_graph.png)
 
 The picture above ilustrates what we are trying to do. In the video there is a surface, of which I know the dimensions of. We need to map the pixel position of our run (i.e. the central point of the bottom part of the detection box, which is right beneath my feet) and map it to a 2D surface, as detailed, quite crudely but effectively, above in yellow. 
 
@@ -410,4 +410,4 @@ I am sure the accuracy of the result is not incredible, but, as stated above, it
 
 Regardless, I am happy with this result. Particularly the fact that I did not need to manipulate anything to prove my point. 
 
-![title](outputs/run.gif)
+![title](../images/TrackMyRun/run.gif)
