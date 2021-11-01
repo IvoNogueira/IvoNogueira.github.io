@@ -88,7 +88,7 @@ check_area_of_interest('speed_detect.mp4'
 After multiple iterations we get a surface area that looks as follows:
 
 
-![aoe](outputs/aoe.png)
+![aoe](../images/TrackMyRun/aoe.png)
 
 After that we're ready to proceed with the detection phase.
 
