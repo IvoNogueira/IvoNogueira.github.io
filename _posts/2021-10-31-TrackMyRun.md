@@ -1,3 +1,4 @@
+Can I run 30 km/h?
 # Can I run 30 km/h?
 
 A while back I had a discussion with some of my colleagues. The topic was running speed, particularly the top speed I could potentially achieve in a given game of football. I was under the impression that some of my runs must be around the 30 km mark but the consensus on the table was that that figure is far too high.
